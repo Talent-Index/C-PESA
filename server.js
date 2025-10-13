@@ -9,6 +9,11 @@ import callback from './controllers/lipaCallback.js';
 import mongoose from "mongoose";
 
 
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("MongoDB Connected"))
+  .catch(err => console.error("MongoDB Error:", err));
+
+
 
 dotenv.config();
 const app = express();
@@ -32,7 +37,7 @@ app.use(callback);
 
 
 
-app.use(mpesastk);
+// app.use(mpesastk);
 app.use(callback);
 
 mongoose
