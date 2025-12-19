@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Landing
+        </title>
+        <style>
+           /* Fullscreen */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    overflow: hidden;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.grid-item {
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-item img {
+    width: 50%;
+    max-width: 120px;
+    margin-top: 10px;
+}
+
+/* Mobile  */
+@media (max-width: 600px) {
+    .grid-item {
+        font-size: 1.3rem;
+    }
+
+    .grid-item img {
+        width: 45%;
+    }
+}
+
+
+        </style>
+</head>
+<div class="grid-container">
+
+    <a class="grid-item" href="#buy-avax">
+        <p>BUY AVAX</p>
+        <img src="avax.png" alt="Buy Avax">
+    </a>
+
+    <a class="grid-item" href="#send-money">
+        <p>SEND MONEY</p>
+        <img src="send-money.png" alt="Send Money">
+    </a>
+
+    <a class="grid-item" href="#pay-till">
+        <p>PAY TILL</p>
+        <img src="till.png" alt="Pay Till">
+    </a>
+
+    <a class="grid-item" href="#paybill">
+        <p>PAYBILL</p>
+        <img src="paybill.png" alt="Paybill">
+    </a>
+
+</div>
+
+</html>
