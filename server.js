@@ -7,7 +7,6 @@ import bodyParser from 'body-parser';
 import router from './controllers/lipaNaMpesa.js';
 import callback from './controllers/lipaCallback.js';
 import mongoose from 'mongoose';
-import fetch from 'node-fetch';
 
 // Load environment variables
 dotenv.config();
